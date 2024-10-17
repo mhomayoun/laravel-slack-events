@@ -123,10 +123,10 @@ class EventCreator
      * Returns new event instance
      *
      * @param $eventType
-     * @return SlackEvent
+     * @return SlackEvent|null
      */
     public function make($eventType)
     {
-        return new $this->map[$eventType];
+        return new $this->map[$eventType] ?? null;
     }
 }
