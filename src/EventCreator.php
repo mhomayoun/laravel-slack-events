@@ -127,6 +127,10 @@ class EventCreator
      */
     public function make($eventType)
     {
-        return new $this->map[$eventType] ?? null;
+        if (!isset($this->map[$eventType])) {
+            return null;
+        }
+
+        return new $this->map[$eventType];
     }
 }
