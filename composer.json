@@ -1,7 +1,7 @@
 {
     "name": "mhomayoun/laravel-slack-events",
     "description": "Handle Slack Events in Laravel easily",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": ["slack", "laravel", "api", "slack api", "slack events api", "events", "slack events"],
     "require": {
         "illuminate/http": "^10||^11",
